@@ -5,7 +5,7 @@ import store from './store/index'
 import * as echarts from 'echarts'
 import axios from 'axios'
 import 'echarts/theme/vintage'
-import 'echarts/theme/chalk'
+import 'echarts/theme/dark'
 import './assets/font/iconfont.css'
 import './assets/css/base.css'
 

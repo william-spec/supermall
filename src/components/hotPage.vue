@@ -3,7 +3,7 @@
     <div class="chart" ref="chart"></div>
     <span class="iconfont title-icon left" @click="toLeft" :style="myStyle.arrStyle"> &#xe6ef; </span>
     <span class="iconfont title-icon right" @click="toRight" :style="myStyle.arrStyle"> &#xe6ed; </span>
-    <span class="title" :style="myStyle.spanStyle">{{myStyle.title}}</span>
+    <span class="hotPageTitle" :style="myStyle.spanStyle">{{myStyle.title}}</span>
   </div>
 </template>
 
@@ -222,7 +222,7 @@ export default {
   transform: translateY(-50%);
   cursor: pointer;
 }
-.title{
+.hotPageTitle{
   position: absolute;
   font-size: 30px;
   color: white;

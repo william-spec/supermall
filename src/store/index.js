@@ -6,8 +6,8 @@ import { createStore } from 'vuex'
 
 export default createStore({
     state: {
-      theme: 'chalk',
-      chalk: {
+      theme: 'dark',
+      dark: {
         // 背景颜色
         backgroundColor: '#161522',
         // 标题文字颜色
@@ -28,8 +28,8 @@ export default createStore({
     },
     mutations: {
       changeTheme(state) {
-        if(state.theme === 'chalk')state.theme = 'vintage'
-        else state.theme = 'chalk'
+        if(state.theme === 'dark')state.theme = 'vintage'
+        else state.theme = 'dark'
       }
     }, 
 })
