@@ -9,7 +9,9 @@ import 'echarts/theme/dark'
 import './assets/font/iconfont.css'
 import './assets/css/base.css'
 
-axios.defaults.baseURL = 'http://localhost:8888/api';
+const proBaseUrl = 'http://47.96.229.47:8888/api';
+const devBaseUrl = 'http://localhost:8888/api';
+axios.defaults.baseURL = process.env.NODE_ENV === 'development' ? devBaseUrl : proBaseUrl;
 
 let app = createApp(App);
 app.config.globalProperties.$echarts = echarts;
