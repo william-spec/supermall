@@ -44,10 +44,11 @@ export default {
         }
       }
       chart.setOption(initOption);
-      chart.on('click', (arg) => {
+      chart.on('click', async (arg) => {
         let name = pinyin(arg.name, {style: pinyin.STYLE_NORMAL, type: 'array'}).join('');
         if(!Alldata.mapStorage[name]){
-          Alldata.mapStorage[name] = require('../assets/map/province/' + name + '.json');
+          let {data} = await proxy.$axios.get('/province/' + name + '.json');
+          Alldata.mapStorage[name] = data;
           proxy.$echarts.registerMap(name, Alldata.mapStorage[name]);
         }
         let option = {
