@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "koa": "^2.13.1"
+    "koa": "^2.13.1",
+    "koa-sslify": "^5.0.0"
   }
 }
