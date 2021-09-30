@@ -9,7 +9,7 @@ import 'echarts/theme/dark'
 import './assets/font/iconfont.css'
 import './assets/css/base.css'
 
-const proBaseUrl = 'http://47.96.229.47:8888/api';
+const proBaseUrl = 'http://101.37.88.129:8888/api';   //此处填入服务器的ip地址，因为打包时会将localhost进行解析，如果填入localhost，那么部署到服务器后仍访问的是本机
 const devBaseUrl = 'http://localhost:8888/api';
 // const proBaseUrl = 'https://47.96.229.47:8888/api';
 // const devBaseUrl = 'https://localhost:8888/api';
